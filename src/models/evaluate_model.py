@@ -12,7 +12,7 @@ model = joblib.load("models/model.pkl")
 pred = model.predict(X_test)
 
 pd.DataFrame({"prediction": pred}).to_csv(
-    "data/predictions.csv",
+    "data/prediction.csv",
     index=False,
 )
 
